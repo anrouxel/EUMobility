@@ -1,5 +1,24 @@
 = EU Mobility
 
+== MapLibre Example
+
+[source, kotlin]
+----
+AndroidView(
+    modifier = Modifier.padding(innerPadding),
+    factory = { context: Context ->
+        MapLibre.getInstance(context)
+        val mapView = MapView(context)
+        val styleUrl = ""
+        mapView.onCreate(null)
+        mapView.getMapAsync { map: MapLibreMap ->
+            map.setStyle(styleUrl)
+        }
+        mapView
+    }
+)
+----
+
 == License
 
 * The EU Mobility source-code is licensed under the European Union Public Licence 1.2. See `LICENSE.MD`.
