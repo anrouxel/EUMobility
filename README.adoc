@@ -1,0 +1,6 @@
+= EU Mobility
+
+== License
+
+* The EU Mobility source-code is licensed under the European Union Public Licence 1.2. See `LICENSE.MD`.
+* Modifications to the source code can be made under the terms of that license.
